@@ -95,6 +95,137 @@ html{
 }
 
 
+/*servicios*/
+
+#titulo_servicios{
+    width: 20%;
+    margin: 0px 42%;
+    margin-bottom: 20px;
+
+}
+
+.services-section{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.services-info {
+border-spacing: 10px;
+border-color:rgb(86, 142, 158);
+border-style: solid;
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+border-bottom: none;
+margin-left: 50px;
+margin-right: 50px;
+text-align: center;
+}
+
+#servicio1{
+width: 40%;
+}
+
+#servicio2{
+width: 60%;
+}
+
+.services-info__imagen {
+border-radius: 50%;
+margin-top: 30px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.button{
+width: 30%;
+margin: 20px;
+padding: 10px 20px;
+color: white;
+background-color: rgb(63,137,145);
+border: 2px solid rgb(56,124,130);
+border-radius: 25px;
+box-shadow: 0px 0px 12px 5px rgba(12, 71, 57, 0.59);
+}
+
+.noticia{
+background-color: rgb(210, 163, 253);
+width: 50%;
+}
+
+.seccion-noticias--servicios{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap; 
+justify-content: space-around;      
+
+}
+.noticia--servicios{
+background-color: unset;
+font-size: 15px;
+
+}
+.noticia--servicios > img{
+border-radius: 50%;
+background-color: unset;
+}
+
+.card{
+border: none;
+
+}
+.card-img-top{
+border-radius: 50%;
+}
+
+
+
+/*noticias*/
+
+.h2_principal{
+    width: 600px;
+    height: 60px;
+    font-size: 40px;
+    margin:0px 29%;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: rgb(63, 146, 145);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#iframes_noticias{
+    padding: 50px;
+    background-color: rgb(242, 250, 254);
+    
+}
+
+.noticia{
+    width: 49%;
+    height: 300px;
+    margin: 10px 0px;
+    border: 5px solid rgb(63, 146, 145);
+    border-radius: 30px;
+}
+
+#noticia1{
+    margin-bottom: 0px;
+}
+
+#noticia2{
+    margin-bottom: 0px;
+}
+
+#noticia3{
+    margin-top: 0px;
+}
+
+#noticia4{
+    margin-top: 0px;
+}
+
+
 /*equipo*/
 
 body {
@@ -166,12 +297,10 @@ body {
 .gmail{
     font-size: larger;
 }
+
 .gmail:hover{
     text-decoration: underline;
 }
-
-
-
 
 .texto-contacto{
 	text-align: left;
@@ -186,14 +315,12 @@ body {
 	text-decoration: underline;
 }
 
-
 input[type="text"], input[type="email"]{
 	border: 1px solid #ccc;
 	padding: 5px;
 	border-radius: 5px;
 	margin: 5px;
 }
-
 
 textarea{
 	border: 1px solid #ccc;
@@ -218,6 +345,7 @@ input[type="submit"]{
 	border: 1px solid rgb(77, 151, 3);
 	border-radius: 5px;
 }
+
 
 /*loggin*/
 
