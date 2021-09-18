@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hero{
+    background-image: linear-gradient(15deg, rgba(19, 84, 122, 0.24) 0%, rgba(67, 146, 137, 0.534) 100%), url(Imagen_Inicio.jpg);
+    width: 100%;
+    height: 650px;
+    max-width: 1400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.menu{
+    width: 100%;
+    height: 80px;
+    max-width: 1400px;
+    position: fixed;
+    align-items: initial;
+    background-color: rgba(42, 134, 129, 0.842);
+    padding: 0px;
+    margin: 0px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.barra_navegacion{
+    text-align: right;
+    padding: 20px;
+    margin: 20px;
+    word-spacing: 15px;
+    display: inline-block;
+    object-fit: cover;
+    
+    
+}
+
+.barra_navegacion>a {
+    color: white;
+    text-decoration: none;
+}
+
+.barra_navegacion a:hover{
+    color: rgb(153, 236, 75);
+    text-decoration: wavy;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.ingresar{
+    background: rgb(86, 142, 158);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px 60px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 17px 7px rgba(17, 105, 83, 0.59);
+    -moz-box-shadow: 0px 0px 17px 7px rgba(17, 85, 68, 0.59);
+    box-shadow: 0px 0px 17px 7px rgba(12, 71, 57, 0.59);
+    border-radius: 5px;
+
+}
+
+.ingresar:hover{
+    background: lawngreen;
+}
+
+.bienvenido{
+    margin-top: 190px;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    text-size-adjust: 40px;
+    text-shadow: 0px 0px 20px black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto_inicio{
+    margin-top: -10px;
+    margin-bottom: 200px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+
+.seccion-noticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    /* flex-flow: row nowrap; */
+    /* justify-content: space-around;
+    border: 4px solid yellowgreen;
+    height: 800px;
+    align-items: center; */
+
+}
+
+/*Seccion servicios*/
+.services-section{
+            display: flex;
+            margin-bottom: 100px;
+}
+.services-info {
+    border-spacing: 10px;
+    border-color:rgb(86, 142, 158);
+    border-style: solid;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+#servicio1{
+    width: 40%;
+}
+#servicio2{
+    width: 60%;
+}
+.services-info__imagen {
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.button{
+    width: 30%;
+    margin: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(63,137,145);
+    border: 2px solid rgb(56,124,130);
+    border-radius: 25px;
+    box-shadow: 0px 0px 12px 5px rgba(12, 71, 57, 0.59);
+}
+
+
+.noticia{
+    background-color: rgb(210, 163, 253);
+    width: 50%;
+    
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.seccion-noticias--servicios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-around;      
+
+}
+.noticia--servicios{
+    background-color: unset;
+    font-size: 15px;
+    
+}
+.noticia--servicios > img{
+    border-radius: 50%;
+    background-color: unset;
+}
+
+.card{
+    border: none;
+
+}
+.card-img-top{
+    border-radius: 50%;
+}
+
+.seccion-pie {
+    background-color: rgba(42, 134, 129, 0.842);
+    height: 200px;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.titulos {
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgba(42, 134, 129, 0.842);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
