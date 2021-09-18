@@ -42,7 +42,6 @@ html{
     word-spacing: 15px;
     float: right;
     object-fit: cover;
-    
 }
 
 .barra_navegacion>a {
@@ -53,7 +52,6 @@ html{
 .barra_navegacion a:hover{
     color: rgb(153, 236, 75);
     text-decoration: wavy;
-    
 }
 
 #ingresar{
@@ -68,7 +66,6 @@ html{
     -moz-box-shadow: 0px 0px 17px 7px rgba(17, 85, 68, 0.59);
     box-shadow: 0px 0px 17px 7px rgba(12, 71, 57, 0.59);
     border-radius: 5px;
-
 }
 
 #ingresar:hover{
@@ -96,6 +93,133 @@ html{
     color: white;
     text-align: center;
 }
+
+
+/*equipo*/
+
+body {
+            max-width: 1400px;
+            min-width: 375px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #222222;
+        }
+
+        .seccion-de-equipo {
+            display: flex;
+            margin-bottom: 100px;
+        }
+
+        .team-info{
+            width: 25%;
+            padding: 15px;
+        }
+
+        .imagen_team-info{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+
+
+/*contacto*/
+
+.footer-section .izquierda{
+    border: 1px = "left" solid black;
+    width: 50%;
+    height: 450px; 
+    background-color: rgb(73, 73, 73);
+    color: rgb(240, 238, 238);
+    font-family: 'Open Sans';
+    font-size:large;
+    text-align: left;
+    float: left;
+}
+.footer-section .derecha{
+    border: 1px 1px 1px 1px solid black;
+    width: 50%;
+    height: 450px;
+    background-color: rgb(73, 73, 73);
+    color: rgb(218, 212, 212);
+    font-family: 'Open Sans';
+    font-size:large;
+    text-align: left;
+    float: right;
+}
+
+.copyright{
+    text-align: center;
+    background-color: rgb(36, 39, 36);
+    color: rgb(110, 107, 107);
+    font-family: 'Open Sans';
+    font-size: larger;   
+}
+
+.redessociales{
+    font-size: larger;
+}
+
+.gmail{
+    font-size: larger;
+}
+.gmail:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.texto-contacto{
+	text-align: left;
+}
+
+.email-contacto{
+	color: #848484;
+	text-decoration: none;
+}
+
+.email-contacto:hover{
+	text-decoration: underline;
+}
+
+
+input[type="text"], input[type="email"]{
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+
+textarea{
+	border: 1px solid #ccc;
+	padding: 5px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.nombre-mensaje{
+	width: 95%;
+}
+
+.email-asunto{
+	width: 45%;
+}
+
+
+input[type="submit"]{
+	padding: 10px;
+    background: rgb(98, 190, 5);
+	color: #fff;
+	border: 1px solid rgb(77, 151, 3);
+	border-radius: 5px;
+}
+
+/*loggin*/
 
 .body{
     overflow: hidden;
@@ -149,11 +273,7 @@ html{
     background-color: rgb(78, 148, 155);
     color: white;
     border-radius: 12px;
-    border-width: 6px;
-    border-color: white;
-    border-style: double;
-
-
+    border: 6px double white;
 }
 
 .input::placeholder{
@@ -204,13 +324,128 @@ html{
     flex-direction: column;
     background: white;
     align-items: center;
-    border-width: 10px;
+    border: 10px solid rgb(86, 142, 158);
     border-radius: 60px;
-    border-style: solid;
-    border-color: rgb(86, 142, 158);
     box-shadow: 19px 0px 74px 29px rgba(0,0,0,0.75);
 }
 
+/*admin*/
 
+#header_admin{
+    width: 100%;
+    height: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(133, 185, 191);
+    color: white;
+    border: 3px solid rgb(66, 130, 133);
+    font-family: sans-serif;
+}
 
+#h2_navegacion{
+    width: 25%;
+    padding: 18px;
+    padding-right: 1%;
+    margin-right: 15px;
+    margin-left: -16px;
+    border: 3px none rgb(66, 130, 133);
+    border-right-style: solid;
+    
+}
+
+#h2_categorias{
+    margin-left: 20px;
+}
+
+#contenido_admin{
+    display: flex;
+    flex-direction: row;
+}
+
+#section_navegacion{
+    width: 25%;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 30%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(66, 130, 133);
+    border-top-style: none;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.parrafo{
+    margin: 10px;
+    display: flex;
+}
+
+#parrafo_productos{
+    width: 100%;
+    background-color: rgb(200, 232, 235);
+    color: rgb(63, 137, 145);
+    margin: 0px;
+    text-align: left;
+}
+
+#parrafo_citas{
+    margin-left: 7px;
+}
+
+#parrafo_noticias{
+    margin-left: 2px;
+}
+
+#parrafo_contacto{
+    margin-left: 4px;
+}
+
+#parrafo_basedatos{
+    margin-left: 3px;
+}
+
+.imagen_admin{
+    margin: 15px 20px;
+    margin-left: 35px;
+    float: left;   
+}
+
+.imagen_productos{
+    background-color: white;
+}
+
+#boton_nuevo{
+    width: 150px;
+    margin: 10px;
+    margin-top: 25px;
+    padding: 8px;
+    padding-left: 1px;
+    background-color: rgb(63, 137, 145);
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+    align-content: center;
+}
+
+.boton{
+    background-color: rgb(63, 137, 145);
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 10px;
+    text-align: right;
+}
+
+#boton_mas{
+    margin-right: 20px;
+    padding-left: -105px;
+}
 
