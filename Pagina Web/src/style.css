@@ -9,7 +9,7 @@ html{
 }
 
 .hero{
-    background-image: linear-gradient(15deg, rgba(19, 84, 122, 0.24) 0%, rgba(67, 146, 137, 0.534) 100%), url(Imagen_Inicio.jpg);
+    background-image: linear-gradient(15deg, rgba(19, 84, 122, 0.24) 0%, rgba(67, 146, 137, 0.534) 100%), url(Imagenes/Imagen_Inicio.jpg);
     width: 100%;
     height: 650px;
     max-width: 1400px;
@@ -56,7 +56,7 @@ html{
     
 }
 
-.ingresar{
+#ingresar{
     background: rgb(86, 142, 158);
     color: rgb(255, 255, 255);
     text-align: center;
@@ -71,7 +71,7 @@ html{
 
 }
 
-.ingresar:hover{
+#ingresar:hover{
     background: lawngreen;
 }
 
@@ -97,6 +97,120 @@ html{
     text-align: center;
 }
 
-.background_loggin{
+.body{
+    overflow: hidden;
+}
+
+.loggin{
+    background-image: linear-gradient(120deg, rgba(63, 137, 145, 0.5) 0%, rgba(63, 137, 145, 0.5) 100%), url(Imagenes/Background_loggin.jpg);
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin-top: -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
 }
+
+.espacio_blanco{
+    width: 100px;
+    height: 80px;
+    margin-top: 10px;
+    margin-top: -20px;
+}
+
+.image_loggin{
+    width: 100px;
+    margin: 15px;
+}
+
+.image_username{
+    height: 20px;
+    margin: 20px;
+    margin-top: 8px;
+    float: left;
+}
+
+.image_password{
+    height: 20px;
+    width: 15px;
+    margin: 20px 22px;
+    margin-right: 23px;
+    margin-top: 8px;
+    float: left;
+
+}
+
+.input{
+    width: 220px;
+    height: 35px;
+    padding: 10px;
+    background-color: rgb(78, 148, 155);
+    color: white;
+    border-radius: 12px;
+    border-width: 6px;
+    border-color: white;
+    border-style: double;
+
+
+}
+
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.445);
+    font-family: sans-serif;
+}
+
+.iniciar_sesion_texto{
+    margin: 20px;
+    color: rgb(56,124,130);
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 25px;
+}
+
+#texto_loggin{
+    font-size: 15px;
+    margin-left: 170px;
+    color: rgb(56,124,130);
+    float: right;
+    align-items: baseline;
+}
+
+#boton_acceder{
+    margin: 40px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(63,137,145);
+    border: 2px solid rgb(56,124,130);
+    border-radius: 25px;
+    box-shadow: 0px 0px 12px 5px rgba(12, 71, 57, 0.59);
+}
+
+#boton_acceder:hover{
+    color: rgb(0,214,252);
+    border-color: rgb(0, 214, 252);
+    box-shadow: 0px 0px 12px 5px rgba(23, 141, 177, 0.59);    
+
+}
+
+#recuadro_loggin{
+    width: 35%;
+    height: 520px;
+    margin: auto auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-items: center;
+    border-width: 10px;
+    border-radius: 60px;
+    border-style: solid;
+    border-color: rgb(86, 142, 158);
+    box-shadow: 19px 0px 74px 29px rgba(0,0,0,0.75);
+}
+
+
+
+
