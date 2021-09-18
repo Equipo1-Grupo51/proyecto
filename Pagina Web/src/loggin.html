@@ -7,15 +7,24 @@
     <title>Loggin</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-        <img src="" alt="Image_inicio">
-        <h1>INICIAR SESIÓN</h1>
-        <img src="" alt="Username"><input type="Username" placeholder="Username" required>
-        <img src="" alt="Password"><input type="Password" name="Password" id="Password" placeholder="Password" required>
-        <div>
-            <input type="submit" value="ACCEDER" class="boton_acceder">
-        </div>
+<body class="body">
+    <div class="loggin">
+        <section class="espacio_blanco"></section>
+        <div id="recuadro_loggin">
+            <img src="Imagenes/logo_loggin.png" alt="Image_inicio" class="image_loggin">
+            <h1 class="iniciar_sesion_texto">INICIAR SESIÓN</h1>
+            <div id="username">
+                <img src="Imagenes/Username.png" alt="Username" class="image_username"><input type="Username" id="Username" placeholder="Username" class="input" required>
+            </div>
+            <div id="password">
+                <img src="Imagenes/Password.png" alt="Password" class="image_password"><input type="Password" name="Password" id="Password" placeholder="Password" class="input" required>
+            </div>
+            <div id="texto_loggin">
+                <p>¿Olvidó su contraseña?</p>
+            </div>
+            <button onclick="window.location.href = 'administracion.html';" type="submit" value="Submit request" id="boton_acceder" class="boton">ACCEDER</button>
+        </div>  
+        <section class="espacio_blanco"></section>
         
     </div>
 </body>
