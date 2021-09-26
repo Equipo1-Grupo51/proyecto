@@ -878,12 +878,176 @@ input[type="submit"]{
     }
 
     .texto_inicio{
-        font-size: 10px;
-    }
-    
-    .texto_inicio{
         font-size: 17px;
     }
+
+
+
+    
+
+    #body_tienda{
+        overflow: hidden;
+    }
+
+    #contenedor_tienda{
+        background-image: url("Imagenes/background_tienda.png");
+    }
+
+    #menu_tienda{
+        margin: 10px;
+        margin-top: 20px;
+        padding: 0px;
+        position: fixed;
+    }
+
+    .nav_tienda{
+        font-family: sans-serif;
+        font-size: 24px;
+        color: cornsilk;
+        text-decoration: none;
+        border-right: 5px solid rgb(255, 255, 255);
+    }
+
+    .nav_tienda:hover{
+        height: 50px;
+        color: cornsilk;
+        background-color: rgb(71, 175, 175);
+    }
+
+    #nav_todo_en_uno{
+        border-right: none;
+    }
+
+    #monitores{
+        width: 100%;
+        height: 750px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
+    #ratones{
+        width: 100%;
+        height: 750px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
+    #teclados{
+        width: 100%;
+        height: 750px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
+    #pc_escritorio{
+        width: 100%;
+        height: 750px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
+    #laptops{
+        width: 100%;
+        height: 750px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
+    #todo_en_uno{
+        width: 100%;
+        height: 750px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
+    .card{
+        width: 300px;
+        height: 400px;
+        margin:20px 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: rgba(153, 153, 153, 0.2);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(15px);
+        text-align: right;
+    }
+    
+    .card .img_monitor{
+        padding: 20px;
+        position: relative;
+        flex-direction: column;
+        transition: 0.5s ease-in-out;
+    }
+
+    .card:hover .img_monitor{
+        transform: translateY(-100px);
+        
+    }
+
+    .card .img_monitor img{
+        max-width: 100%;
+        margin: 0 0 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .card:hover .img_monitor img{
+        transform: translate(-0px, -40px) scale(1.5);
+    }
+
+    .nombre_titulo{
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+
+    }
+    
+    .lista_parrafo{
+        margin: 0px;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    .card .content{
+        position: relative;
+        bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .card:hover .content{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .boton_buy{
+        position: relative;
+        bottom: 20px;
+        display: inline-block;
+        padding: 12px 30px;
+        background: white;
+        border-radius: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -919,4 +1083,149 @@ input[type="submit"]{
     .texto_inicio{
         font-size: 25px;
     }
+
+
+
+
+
+    .nav_tienda{
+        font-size: 30px;
+    }
+
+    #nav_todo_en_uno{
+        border-right: none;
+    }
+
+    #monitores{
+        width: 100%;
+        height: 750px;
+    }
+
+    #ratones{
+        width: 100%;
+        height: 750px;
+    }
+
+    #teclados{
+        width: 100%;
+        height: 750px;
+    }
+
+    #pc_escritorio{
+        width: 100%;
+        height: 750px;
+    }
+
+    #laptops{
+        width: 100%;
+        height: 750px;
+    }
+
+    #todo_en_uno{
+        width: 100%;
+        height: 750px;
+    }
+
+    .card{
+        width: 300px;
+        height: 400px;
+        margin:20px 40px;
+    }
+    
+    .card .imagenes_tienda{
+        padding: 20px;
+        position: relative;
+        flex-direction: column;
+        transition: 0.5s ease-in-out;
+    }
+
+    .card:hover .imagenes_tienda{
+        transform: translateY(-100px);
+        
+    }
+
+    .card .imagenes_tienda img{
+        margin: 0 0 20px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .card:hover .imagenes_tienda img{
+        transform: translate(-0px, -40px) scale(1.5);
+    }
+
+    .card:hover .img_raton img{
+        transform: translate(-30px, -40px) scale(1.5);
+    }
+
+    .cadr .img_monitor img{
+        max-width: 100%;
+    }
+
+    .card .img_raton img{
+        max-width: 70%;
+    }
+    
+    .nombre_titulo{
+        font-size: 20px;
+    }
+    
+    .lista_parrafo{
+        margin: 0px;
+    }
+
+    .card .content{
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .card .content{
+        transition: 0.5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .card:hover .content{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .card .content .content_monitores{
+        top: -90px;
+    }
+
+    .card .content .content_ratones{
+        bottom: 200px;
+    }
+
+    .precio{
+        position: relative;
+        bottom: 130px;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        transition: 0.3s ease-out;
+    }
+
+    .card:hover .precio{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .boton_buy{
+        position: relative;
+        display: inline-block;
+        padding: 12px 30px;
+        bottom: 130px;
+        background: white;
+        border-radius: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    
+
 }
