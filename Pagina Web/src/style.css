@@ -232,8 +232,6 @@ html{
 
 /*equipo*/
 
-
-/*
 .seccion-de-equipo {
     width: 100%;
     max-width: 1400px;
@@ -250,8 +248,10 @@ html{
     display: block;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 50px;
+    border: 5px solid rgb(63, 146, 145);
 }
-*/
+
 
 /*contacto*/
 
@@ -782,13 +782,6 @@ input[type="submit"]{
 
 
 
-
-
-
-
-
-
-
 @media (min-width: 375px) {
     .hero{
         width: 100%;
@@ -831,6 +824,27 @@ input[type="submit"]{
 
     .bienvenido{
         font-size: 50px;
+    }
+
+    /*FOOTER*/
+
+    .foot2{
+        height: 400px;
+        background-color: rgb(53, 134, 121);
+    }
+
+    #enlaces_utiles_foot{
+        position: absolute;
+        visibility: hidden
+    }
+
+    #servicios_foot{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #foot5{
+        font-size: 100px;
     }
 }
 
@@ -1048,6 +1062,35 @@ input[type="submit"]{
         text-transform: uppercase;
     }
 
+        /*FOOTER*/
+
+        .foot2{
+            background-color: rgb(42, 59, 51);
+        }
+    
+    
+        #enlaces_utiles_foot{
+            position: relative;
+            visibility: visible;
+        }
+    
+        #servicios_foot{
+            position: relative;
+            visibility: visible;
+        }
+    
+        #contactanos_parrafo{
+            font-size: 34px;
+            font-weight: 500;
+        }
+    
+        .foot4{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
 }
 
 @media (min-width: 1200px) {
@@ -1226,6 +1269,32 @@ input[type="submit"]{
         text-transform: uppercase;
     }
 
-    
+
+    /*FOOTER*/
+
+    #servicios_foot{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #servicios_foot a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .foot2{
+        background:        rgb(42, 59, 51);
+        font-size: x-large;
+        font-weight: 400;
+    }
+    .foot3{
+        color: #fff;
+        font-size: large;
+        font-weight: 400;
+    }
+    #contactanos_parrafo{
+        font-size: 34px;
+        font-weight: 500;
+    }   
 
 }
