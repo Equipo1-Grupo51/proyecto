@@ -826,6 +826,142 @@ input[type="submit"]{
         font-size: 50px;
     }
 
+    #contenedor_tienda{
+        background-image: url("Imagenes/background_tienda.png");
+    }
+
+    #menu_tienda{
+        width: 100%;
+        margin: 10px;
+        margin-top: 20px;
+        padding: 0px;
+        position: fixe;
+        align-items: center;
+        position: fixed;
+        z-index: 100;
+        background-color: teal;
+    }
+
+    #menu_tienda>ul>a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_tienda{
+        font-size: 15px;
+        margin: 5px;
+        background-color: rgb(3, 117, 117);
+    }
+
+    #nav_todo_en_uno{
+        border-right: none;
+    }
+
+    .section_tienda{
+        width: 100%;
+    }
+
+    #monitores{
+        padding-top: 130px;
+    }
+    
+    .card{
+        height: 100%;
+        margin:20px 40px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: rgba(153, 153, 153, 0.2);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(15px);
+        text-align: right;
+    }
+    
+    .card .imagenes_tienda{
+        padding: 20px;
+        position: relative;
+        flex-direction: column;
+        transition: 0.5s ease-in-out;
+    }
+
+    .card .imagenes_tienda img{
+        max-width: 100%;
+        max-height: 150px;
+        margin: 0 0 20px;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .nombre_titulo{
+        top: -10px;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+    
+    .lista_parrafo{
+        margin: 0px;
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .card .content{
+        position: relative;
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+        visibility: hidden;
+        font-size: 15px;
+        transition: 0s ease-in-out;
+    }
+
+    .card:active .content{
+        visibility: visible;
+    }   
+    
+    .content>ul{
+        padding: 0px;
+    }
+
+    .precio{
+        position: relative;
+        bottom: 90px;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        transition: 0.3s ease-out;
+    }
+
+    .card:active .precio{
+        visibility: hidden;
+        transition: 0s ease;
+    }
+
+    .boton_buy{
+        position: relative;
+        display: inline-block;
+        padding: 12px 30px;
+        bottom: 50px;
+        background: white;
+        border-radius: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .card:active .boton_buy{
+        transform: translate(-0px, 30px);
+    }
+
+    .hidden_md{
+        position: relative;
+        visibility: visible;
+    }
+
+
     /*FOOTER*/
 
     .foot2{
@@ -846,7 +982,7 @@ input[type="submit"]{
     #foot5{
         font-size: 100px;
     }
-}
+
 
 @media (min-width: 768px) {
     .hero{
@@ -893,15 +1029,7 @@ input[type="submit"]{
 
     .texto_inicio{
         font-size: 17px;
-    }
-
-
-
-    
-
-    #body_tienda{
-        overflow: hidden;
-    }
+    } 
 
     #contenedor_tienda{
         background-image: url("Imagenes/background_tienda.png");
@@ -912,14 +1040,16 @@ input[type="submit"]{
         margin-top: 20px;
         padding: 0px;
         position: fixed;
+        background-color: rgba(0, 128, 128, 0);
     }
 
     .nav_tienda{
         font-family: sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         color: cornsilk;
         text-decoration: none;
         border-right: 5px solid rgb(255, 255, 255);
+        background-color: rgba(3, 117, 117, 0);
     }
 
     .nav_tienda:hover{
@@ -932,98 +1062,50 @@ input[type="submit"]{
         border-right: none;
     }
 
+    .section_tienda{
+        width: 100%;
+        height: 150%;
+        margin: 0px;
+        padding-top: 80px;
+        align-items: center;
+        background-image: url("Imagenes/background_tienda.png");
+        background-repeat: no-repeat;
+    }
+
     #monitores{
-        width: 100%;
-        height: 750px;
-        align-items: center;
-        background-image: url("Imagenes/background_tienda.png");
-        background-repeat: no-repeat;
-    }
-
-    #ratones{
-        width: 100%;
-        height: 750px;
-        align-items: center;
-        background-image: url("Imagenes/background_tienda.png");
-        background-repeat: no-repeat;
-    }
-
-    #teclados{
-        width: 100%;
-        height: 750px;
-        align-items: center;
-        background-image: url("Imagenes/background_tienda.png");
-        background-repeat: no-repeat;
-    }
-
-    #pc_escritorio{
-        width: 100%;
-        height: 750px;
-        align-items: center;
-        background-image: url("Imagenes/background_tienda.png");
-        background-repeat: no-repeat;
-    }
-
-    #laptops{
-        width: 100%;
-        height: 750px;
-        align-items: center;
-        background-image: url("Imagenes/background_tienda.png");
-        background-repeat: no-repeat;
-    }
-
-    #todo_en_uno{
-        width: 100%;
-        height: 750px;
-        align-items: center;
-        background-image: url("Imagenes/background_tienda.png");
-        background-repeat: no-repeat;
+        padding-top: 80px;
     }
 
     .card{
-        width: 300px;
         height: 400px;
         margin:20px 40px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        background-color: rgba(153, 153, 153, 0.2);
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(15px);
-        text-align: right;
+    }
+
+    .card:hover .imagenes_tienda{
+        transform: translateY(-80px);
+    }
+
+    .card:hover .imagenes_tienda img{
+        transform: translate(-0px, -10px) scale(1.5);
+    }
+
+    .card:hover .img_raton img{
+        transform: translate(-0px, -10px) scale(1.5);
+    }
+
+    .card:hover .img_teclado img{
+        transform: translate(-0px, -0px) scale(1.5);
     }
     
-    .card .img_monitor{
-        padding: 20px;
-        position: relative;
-        flex-direction: column;
-        transition: 0.5s ease-in-out;
-    }
-
-    .card:hover .img_monitor{
-        transform: translateY(-100px);
-        
-    }
-
-    .card .img_monitor img{
-        max-width: 100%;
-        margin: 0 0 20px;
-        transition: 0.5s ease-in-out;
-    }
-
-    .card:hover .img_monitor img{
-        transform: translate(-0px, -40px) scale(1.5);
-    }
-
     .nombre_titulo{
         font-size: 20px;
-        font-family: sans-serif;
-        font-weight: bold;
-        color: white;
-        text-align: center;
-
     }
-    
+
+    .card:hover .nombre_titulo{
+        transition: 0.5s ease-in-out;
+        transform: translate(-0px, -100px);
+    }
+        
     .lista_parrafo{
         margin: 0px;
         font-family: sans-serif;
@@ -1031,12 +1113,13 @@ input[type="submit"]{
     }
 
     .card .content{
-        position: relative;
+        position: absolute;
         bottom: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
+        font-size: 15px;
         text-align: left;
         transition: 0.5s ease-in-out;
         opacity: 0;
@@ -1048,11 +1131,25 @@ input[type="submit"]{
         visibility: visible;
     }
 
+    .precio{
+        position: absolute;
+        bottom: 90px;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        transition: 0.3s ease-out;
+    }
+
+    .card:hover .precio{
+        opacity: 0;
+        visibility: hidden;
+    }
+
     .boton_buy{
-        position: relative;
-        bottom: 20px;
+        position: absolute;
         display: inline-block;
         padding: 12px 30px;
+        bottom: 50px;
         background: white;
         border-radius: 40px;
         font-weight: 600;
@@ -1061,6 +1158,13 @@ input[type="submit"]{
         text-decoration: none;
         text-transform: uppercase;
     }
+
+    .card:hover .boton_buy{
+        transform: translate(-0px, 30px);
+    }
+
+
+
 
         /*FOOTER*/
 
@@ -1127,9 +1231,9 @@ input[type="submit"]{
         font-size: 25px;
     }
 
-
-
-
+    #body_tienda{
+        overflow: hidden;
+    }
 
     .nav_tienda{
         font-size: 30px;
@@ -1139,34 +1243,15 @@ input[type="submit"]{
         border-right: none;
     }
 
+    .section_tienda{
+        width: 100%;
+        height: 750px;
+        margin: 0px;
+        padding-top: 0px;
+    }
+
     #monitores{
-        width: 100%;
-        height: 750px;
-    }
-
-    #ratones{
-        width: 100%;
-        height: 750px;
-    }
-
-    #teclados{
-        width: 100%;
-        height: 750px;
-    }
-
-    #pc_escritorio{
-        width: 100%;
-        height: 750px;
-    }
-
-    #laptops{
-        width: 100%;
-        height: 750px;
-    }
-
-    #todo_en_uno{
-        width: 100%;
-        height: 750px;
+        padding-top: 0px;
     }
 
     .card{
@@ -1188,6 +1273,8 @@ input[type="submit"]{
     }
 
     .card .imagenes_tienda img{
+        max-width: 100%;
+        max-height: 150px;
         margin: 0 0 20px;
         transition: 0.5s ease-in-out;
     }
@@ -1197,19 +1284,21 @@ input[type="submit"]{
     }
 
     .card:hover .img_raton img{
-        transform: translate(-30px, -40px) scale(1.5);
+        transform: translate(-0px, -20px) scale(1.5);
     }
 
-    .cadr .img_monitor img{
-        max-width: 100%;
-    }
-
-    .card .img_raton img{
-        max-width: 70%;
+    .card:hover .img_teclado img{
+        transform: translate(-0px, -0px) scale(1.5);
     }
     
     .nombre_titulo{
+        top: -10px;
         font-size: 20px;
+    }
+
+    .card:hover .nombre_titulo{
+        transition: 0.5s ease-in-out;
+        transform: translate(-0px, -100px);
     }
     
     .lista_parrafo{
@@ -1217,15 +1306,11 @@ input[type="submit"]{
     }
 
     .card .content{
+        position: absolute;
         transition: 0.5s ease-in-out;
         opacity: 0;
         visibility: hidden;
-    }
-
-    .card .content{
-        transition: 0.5s ease-in-out;
-        opacity: 0;
-        visibility: hidden;
+        font-size: 15px;
     }
 
     .card:hover .content{
@@ -1233,17 +1318,9 @@ input[type="submit"]{
         visibility: visible;
     }
 
-    .card .content .content_monitores{
-        top: -90px;
-    }
-
-    .card .content .content_ratones{
-        bottom: 200px;
-    }
-
     .precio{
-        position: relative;
-        bottom: 130px;
+        position: absolute;
+        bottom: 90px;
         font-size: 30px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white;
@@ -1256,10 +1333,10 @@ input[type="submit"]{
     }
 
     .boton_buy{
-        position: relative;
+        position: absolute;
         display: inline-block;
         padding: 12px 30px;
-        bottom: 130px;
+        bottom: 50px;
         background: white;
         border-radius: 40px;
         font-weight: 600;
@@ -1267,6 +1344,15 @@ input[type="submit"]{
         color: black;
         text-decoration: none;
         text-transform: uppercase;
+    }
+
+    .card:hover .boton_buy{
+        transform: translate(-0px, 30px);
+    }
+
+    .hidden_md{
+        position: relative;
+        visibility: visible;
     }
 
 
@@ -1297,4 +1383,5 @@ input[type="submit"]{
         font-weight: 500;
     }   
 
+    }
 }
