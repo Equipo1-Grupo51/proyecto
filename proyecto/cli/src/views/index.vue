@@ -5,14 +5,14 @@
       <main>
         <header class="hero">     
             <nav class="row menu">
-                <router-link target="_blank" id="ingresar" class="col col-md-1 col-xl-1 boton nav-link" to="/login">INGRESAR</router-link>
+                <router-link target="_blank" id="ingresar" class="col col-md-1 col-xl-1 boton nav-link" to="/login_admin">INGRESAR</router-link>
                 <nav class="col-12 col-md col-xl barra_navegacion">
-                    <ul class="col-md-12">
-                        <a href="#" class="atajos_nav">INICIO</a>
-                        <a href="#services" class="atajos_nav">SERVICIOS</a>
-                        <a href="#news" class="atajos_nav">NOTICIAS</a>
-                        <a href="#team" class="atajos_nav">EQUIPO</a>
-                        <a href="#contactanos" class="atajos_nav">CONTÁCTANOS</a> 
+                    <ul class="row col-md-12">
+                        <a href="#" class="col-5 col-md-auto atajos_nav">INICIO</a>
+                        <a href="#services" class="col-5 col-md-auto atajos_nav">SERVICIOS</a>
+                        <a href="#news" class="col-5 col-md-auto atajos_nav">NOTICIAS</a>
+                        <a href="#team" class="col-5 col-md-auto atajos_nav">EQUIPO</a>
+                        <a href="#contactanos" class="col-5 col-md-auto atajos_nav">CONTÁCTANOS</a> 
                     </ul>
                 </nav>
             </nav>
@@ -27,40 +27,39 @@
          <!--Servicios -->
         <section id="services" class="services-section">
             <h2 id="titulo_servicios" class="h2_principal">SERVICIOS</h2>
-            <section id="servicios" >
-                <article id="servicio1" class="col services-info">
-                    <img class="services-info__imagen" src="http://placeimg.com/200/200/nature" alt="">
-                    <h2 class="services-info__title">Servicio 1</h2>
+            <div class="row" >
+                <article class="col-11 col-md-5 col-lg-5 services-info">
+                    <img class="services-info__imagen" src="../assets/undraw_Active_support_re_b7sj.svg" width="50%" alt="">
+                    <h2 class="services-info__title">Asesorías</h2>
                     <p class="services-info__text">
                         Asesorias de hardware y software, donde te instruiremos para que puedas armar tu propia pc, actualizar el hardware, instalar los porgramas que necesites para tu pc, actualizar drivers y más.
                     </p>
-                    <button class="button">Tipos</button>
-                    <button class="button">Citas</button>
+                    <router-link to="/usuario" target="_blank" class="button">Citas</router-link>
                 </article>
-                <article id="servicio2" class="col services-info">
-                    <img class="services-info__imagen" src="http://placeimg.com/200/200/tech" alt="">
-                    <h2 class="services-info__title">Servicio 2</h2>
-                    <p class="services-info__text">
+                <article class="col-11 col-md-6 col-lg-6 services-info">
+                    <img class="services-info__imagen" src="../assets/undraw_add_to_cart_vkjp.svg" width="60%" alt="">
+                    <h2 class="services-info__title">Computo</h2>
+                    <p class="services_text">
                         Compra los mouse, teclados y monitores para tu pc. Ademas te ofrecemos computadores totalmente armados como laptops, todo en uno y pc de escritorio.
                     </p>
-                     <router-link target="_blank" id="ingresar" class="button nav-link" to="/tienda">Catalogo</router-link>
+                     <router-link class="button" to="/tienda" target="_blank">Catalogo</router-link>
 
                 </article>
-            </section>
+            </div>
         </section>
     
 
         <!--Noticias -->
         <section id="news" class="news-section">
-            <h2 class="h2_principal">NOTICIAS</h2>
-            <div id="iframes_noticias">
+            <h2 id="titulo_noticias" class="h2_principal">NOTICIAS</h2>
+            <div class="row" id="iframes_noticias">
                 <div>
-                    <iframe src="https://www.debate.com.mx/tecnologia/Si-te-lo-perdiste-estas-son-las-noticias-tecnologicas-mas-impactantes-de-la-semana-20210916-0145.html" frameborder="0" id="noticia1" title="Noticia 1" class="col-lg-5 noticia"></iframe>
-                    <iframe src="https://sevilla.abc.es/agronoma/noticias/cultivos/freson/brantd-tecnologia-retrasar-pudricion-fresa/" id="noticia2" title="Noticia 2" class="noticia"></iframe>
+                    <iframe src="https://www.debate.com.mx/tecnologia/Si-te-lo-perdiste-estas-son-las-noticias-tecnologicas-mas-impactantes-de-la-semana-20210916-0145.html" frameborder="0" id="noticia1" title="Noticia 1" class="col-10 col-md-5 col-lg-5 noticia"></iframe>
+                    <iframe src="https://sevilla.abc.es/agronoma/noticias/cultivos/freson/brantd-tecnologia-retrasar-pudricion-fresa/" id="noticia2" title="Noticia 2" class="col-10 col-md-5 col-lg-5 noticia"></iframe>
                 </div>
                 <div>
-                    <iframe src="https://elcomercio.pe/tecnologia/tecnologia/fake-news-la-desinformacion-en-facebook-obtiene-6-veces-mas-clics-que-las-noticias-segun-un-estudio-noticias-falsas-noticia/ frameborder=0" id="noticia3" title="Noticia 3" class="noticia"></iframe>
-                    <iframe src="https://www.minuto30.com/otro-iphone-mision-espacial-cinco-clics/1273139/" frameborder="0" id="noticia4" title="Noticia 4" class="noticia"></iframe>
+                    <iframe src="https://elcomercio.pe/tecnologia/tecnologia/fake-news-la-desinformacion-en-facebook-obtiene-6-veces-mas-clics-que-las-noticias-segun-un-estudio-noticias-falsas-noticia/" frameborder=0 id="noticia3" title="Noticia 3" class="col-10 col-md-5 col-lg-5 noticia"></iframe>
+                    <iframe src="https://www.minuto30.com/otro-iphone-mision-espacial-cinco-clics/1273139/" frameborder="0" id="noticia4" title="Noticia 4" class="col-10 col-md-5 col-lg-5 noticia"></iframe>
                 </div>
             </div>
         </section>
@@ -69,10 +68,10 @@
         <!--Equipo -->
         <section id="team" class="team-section">
     
-            <h2 class="h2_principal">Equipo</h2>
-            <section class="seccion-de-equipo">        
-                <article class="team-info">
-                    <img class="imagen_team-info" src="imagenes/Andres.jpeg"  height="200px" width="200px" alt="">
+            <h2 id="titulo_equipo" class="h2_principal">EQUIPO</h2>
+            <section class="row seccion-de-equipo">        
+                <article class="col-12 col-md-4 col-lg-3 team-info">
+                    <img class="imagen_team-info" src="../assets/Andres.jpeg"  height="200px" width="200px" alt="">
                     <h3 class="title_team-info">Andres Felipe Maya</h3>
                     <p class="text_team-info">
                         Bachiller egresado del INEM Francisco Jose de Caldas de Popayan, tripulante de la MisionTic 2022 en la UTP (Universidad Tecnologia de Pereira)
@@ -80,8 +79,8 @@
                     <b>Contacto Personal +57 3122732200</b>
                 </article>
             
-                <article class="team-info">
-                    <img class="imagen_team-info" src="imagenes/alejandro.jpg" height="200px" width="200px" alt="">
+                <article class="col-12 col-md-4 col-lg-3 team-info">
+                    <img class="imagen_team-info" src="../assets/alejandro.jpg" height="200px" width="200px" alt="">
                     <h3 class="title_team-info">Alejandro Palacios Figueroa</h3>
                     <p class="text_team-info">
                         Estudiante de Ingenieria Electronica en la Universidad Surcolombiana, tripulante de la MisionTic 2022 en la UTP (Universidad Tecnologia de Pereira)
@@ -89,8 +88,8 @@
                     <p><b>Contacto Personal +57 3012738506</b></p>
                 </article>
             
-                <article class="team-info">
-                    <img class="imagen_team-info" src="imagenes/Cesar.jpeg" height="200px" width="200px" alt="">
+                <article class="col-12 col-md-4 col-lg-3 team-info">
+                    <img class="imagen_team-info" src="../assets/Cesar.jpeg" height="200px" width="200px" alt="">
                     <h3 class="title_team-info">Cesar Andres Leon</h3>
                     <p class="text_team-info">
                         Tecnico en Sistema egresado del SENA en alianzas con Institutos Tecnologicos, tripulante de la MisionTic 2022 en la UTP (Universidad Tecnologia de Pereira)
@@ -98,8 +97,8 @@
                     <p><b>Contacto Personal +57 3144840261</b></p>
                 </article>
             
-                <article class="team-info">
-                    <img class="imagen_team-info" src="imagenes/Edward.jpeg" height="200px" width="200px" alt="">
+                <article class="col-12 col-md-4 col-lg-3 team-info">
+                    <img class="imagen_team-info" src="../assets/Edward.jpeg" height="200px" width="200px" alt="">
                     <h3 class="title_team-info">Edward Bolaños Salinas</h3>
                     <p class="text_team-info">
                         Bachiller egresado de la I.E. Juan Bautista Bolaños, tripulante de la MisionTic 2022 en la UTP (Universidad Tecnologia de Pereira)
@@ -107,8 +106,8 @@
                     <p><b>Contacto Personal +57 3148173048</b></p>
                 </article>
             
-                <article class="team-info">
-                    <img class="imagen_team-info" src="imagenes/jeison.jpeg" height="200px" width="190px" alt="">
+                <article class="col-12 col-md-4 col-lg-3 team-info">
+                    <img class="imagen_team-info" src="../assets/jeison.jpeg" height="200px" width="190px" alt="">
                     <h3 class="title_team-info">Jeisson Alejandro Vargas</h3>
                     <p class="text_team-info">
                         Tecnico profesional en inglés, Administrador publico en la ESAP, tripulante de la MisionTic 2022 en la UTP (Universidad Tecnologia de Pereira)

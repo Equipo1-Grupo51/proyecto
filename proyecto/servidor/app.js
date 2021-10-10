@@ -7,7 +7,7 @@ const app = express();
 
 //CONEXION A BASE DE DATOS
 const mongoose = require('mongoose'); 
-const url = 'mongodb://localhost:27017/administracion';
+const url = 'mongodb+srv://IFRaseck:DcBAi7jMmynEklhP@cluster0.tqzwx.mongodb.net/administracion?retryWrites=true&w=majority';
 const options = {UseNewUrlParser: true, useUnifiedTopology: true};
 
 mongoose.connect(url, options).then(

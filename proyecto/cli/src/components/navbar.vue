@@ -35,7 +35,7 @@
           </b-nav-item-dropdown> -->
         </b-navbar-nav>
         <b-navbar-nav>
-          <router-link class="nav-link" to="/login">Acceder</router-link>
+          <router-link class="nav-link" to="/login_admin">Acceder</router-link>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>

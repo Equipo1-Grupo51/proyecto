@@ -15,8 +15,12 @@ import Home from './views/index.vue'
 import Login from './views/login.vue'
 import Admin from './views/admin.vue'
 import Tienda from './views/tienda.vue'
+import LoginAdmin from './views/login_admin.vue'
+import Usuario from './views/usuario.vue'
+import VueCalendly from 'vue-calendly';
 
 
+Vue.use(VueCalendly);
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
 Vue.use(VueAxios, axios)
@@ -30,8 +34,10 @@ Vue.config.productionTip = false
 const routes = [
   { path: '/', component: Home },
   { path: '/login', component: Login},
+  { path: '/login_admin', component: LoginAdmin},
   { path: '/admin', component: Admin},
-  { path: '/tienda', component: Tienda}
+  { path: '/tienda', component: Tienda},
+  { path: '/usuario', component: Usuario}
 ]
 
 const router = new VueRouter({

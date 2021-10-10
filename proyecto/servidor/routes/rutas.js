@@ -245,6 +245,87 @@ router.put('/noticias/:id', async(req, res) => {
     }
 });
 
+//USUARIO
+
+import Usuario from '../models/usuarios'
+
+//Agregar un producto
+
+router.post('/nuevo-usuario', async(req, res) => {
+    const body = req.body;
+    try {
+        const usuarioDB = await Usuario.create(body);
+        res.status(200).json(usuarioDB);
+
+    } catch (error) {
+        return res.status(500).json({
+            mensaje: 'ha ocurrido un error',
+            error
+        })
+    }
+});
+
+router.get('/usuarios/:id', async(req, res) => {
+    const _id = req.params.id;
+    try {
+        const usuarioDB = await Usuario.findOne({_id});
+        res.json(usuarioDB);
+
+    } catch (error) {
+        return res.status(500).json({
+            mensaje: 'ha ocurrido un error',
+            error
+        })
+    }
+});
+
+router.get('/usuarios', async(req, res) => {
+
+    try {
+        const usuarioDB = await Usuario.find();
+        res.json(usuarioDB);
+
+    } catch (error) {
+        return res.status(500).json({
+            mensaje: 'ha ocurrido un error',
+            error
+        })
+    }
+});
+
+router.delete('/usuarios/:id', async(req, res) => {
+    const _id = req.params.id;
+    try {
+        const usuarioDB = await Usuario.findByIdAndDelete({_id});
+        if(!Usuario){
+            return res.status(400).json({
+                mensaje: 'No se encontro el id del usuario', error })
+        }
+        res.json(usuarioDB);
+        
+    } catch (error) {
+        return res.status(500).json({
+            mensaje: 'ha ocurrido un error',
+            error
+        })
+    }
+});
+
+router.put('/usuarios/:id', async(req, res) => {
+    const _id = req.params.id;
+    const body = req.body;
+    try {
+        const usuarioDB = await Usuario.findByIdAndUpdate(
+            _id, body, {new: true});
+            res.json(usuarioDB);
+        
+    } catch (error) {
+        return res.status(500).json({
+            mensaje: 'ha ocurrido un error',
+            error
+        })
+    }
+});
 
 
 

@@ -2,32 +2,31 @@
   <div class="admin">
     <b-nav :class="[ !visibleSidebar ? 'd-none' : '' ]" vertical class="sidebar-content">
       <div>
-        <h1>Menu</h1>
+        <h1 id="menu_titulo_admin">Menu</h1>
       </div>
-      <b-nav-item @click="changeOption(1)" :class="[ option==1 ? 'active' : '']">Productos</b-nav-item>
-      <b-nav-item @click="changeOption(2)" :class="[ option==2 ? 'active' : '']">Servicios</b-nav-item>
-      <b-nav-item @click="changeOption(3)" :class="[ option==3 ? 'active' : '']">Noticias</b-nav-item>
+      <b-nav-item id="parrafo_productos" @click="changeOption(1)" :class="[ option==1 ? 'active' : '']"><img src="../assets/productos_negro.png" alt="" class="imagen_admin">Productos</b-nav-item>
+      <b-nav-item id="parrafo_servicios" @click="changeOption(2)" :class="[ option==2 ? 'active' : '']"><img src="../assets/servicios_negro.png" alt="" class="imagen_admin">Servicios</b-nav-item>
+      <b-nav-item id="parrafo_noticias" @click="changeOption(3)" :class="[ option==3 ? 'active' : '']"><img src="../assets/noticias_negro.png" alt="" class="imagen_admin">Noticias</b-nav-item>
+      <b-nav-item id="parrafo_noticias" @click="changeOption(4)" :class="[ option==4 ? 'active' : '']"><img src="../assets/usuarios_negro.png" alt="" class="imagen_admin">Usuarios</b-nav-item>
     </b-nav>
     <div class="content-custom">
-      <b-navbar type="dark" variant="dark">
+      <b-navbar id="menu_nav_admin">
         <div class="d-flex align-items-center mr-3">
           <span @click="isVisibleSidebar" class="navbar-toggler-icon"></span>
         </div>
         <b-navbar-nav>          
-          <router-link to="/" class="nav-link">Home</router-link>          
+          <router-link to="/" class="nav-link boton_logOut">Home</router-link>          
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown text="User" right>
-            <b-dropdown-item href="#">Account</b-dropdown-item>
-            <b-dropdown-item><router-link to="/login">logout</router-link></b-dropdown-item>
-          </b-nav-item-dropdown>
+        <button @click="logOut()" class="boton_logOut">Cerrar  sesion</button>
         </b-navbar-nav>
       </b-navbar>
       <div class="container-fluid">
         <div class="m-5">
-          <Productos v-if="option == 1"/>
+          <Productos v-if="option == 1"/> 
           <Servicios v-else-if="option == 2"/>
           <Noticias v-else-if="option == 3"/>
+          <Usuarios v-else-if="option == 4"/>
         </div>
       </div>
     </div>
@@ -37,11 +36,20 @@
 import Productos from '../components/admin/Productos.vue'
 import Servicios from '../components/admin/Servicios.vue'
 import Noticias from '../components/admin/Noticias.vue'
+import Usuarios from '../components/admin/Usuarios.vue'
+
 export default {
+  beforeCreate(){
+    var autenticacion = window.localStorage.getItem('autenticacion');
+    if(autenticacion !== 'ok'){
+      this.$router.push('login_admin');
+    }
+  },
   components: {
     Productos,
     Servicios,
-    Noticias
+    Noticias,
+    Usuarios
   },
   data() {
     return {
@@ -55,6 +63,10 @@ export default {
     },
     isVisibleSidebar() {
       this.visibleSidebar = !this.visibleSidebar
+    },
+    logOut(){
+      window.localStorage.removeItem('autenticacion');
+      this.$router.push('login_admin');
     }
   },
 }
@@ -64,7 +76,7 @@ export default {
   display: flex;
 }
 .admin .sidebar-content {
-  background-color: azure;
+  background-color: rgba(203, 255, 255, 0.527);
   width: 300px;
   height: 100vh;
 }
@@ -76,7 +88,7 @@ export default {
   color: black;
 }
 .admin .sidebar-content .nav-item :hover {
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
 }
 .admin .content-custom {
   width: 100%;
@@ -85,10 +97,12 @@ export default {
   height: 49px;
 }
 .active {
-  background-color: rgb(167, 167, 255);
+  border-left: 20px solid rgb(30, 145, 165);
+  color: rgb(30, 145, 165);
+  background-color: rgb(255, 255, 255);
 }
 .dropdown-item a {
-  color: #212529;  
+  color: #1384f5;  
 }
 a :hover {
   text-decoration: none;

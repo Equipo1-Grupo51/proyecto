@@ -23,11 +23,11 @@
             <button id="boton_agregar" class="boton" type="submit">AGREGAR</button>
         </form>
         <div id="contenido_admin">
-            <div id="filtro" class="row section_filtro">
+            <!-- <div id="filtro" class="row section_filtro">
                 <p class="col-auto parrafo_filtro">Filtrar:</p>
                 <input name="filtro" type="search" id="texto_filtro" placeholder="Filtro...">
                 <button id="boton_filtro" type="submit" class="boton">Filtrar</button>        
-            </div>
+            </div> -->
 
             <table class="table table-striped">
                 <thead>
@@ -35,7 +35,7 @@
                     <th scope="col">ID</th>
                     <th scope="col">Nombre</th>
                     <th scope="col-4">url</th>
-                    <th scope="col">Estado</th>
+                    <!-- <th scope="col">Estado</th> -->
                     <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -44,11 +44,11 @@
                         <th scope="row">{{item._id}}</th>
                         <td>{{item.nombre}}</td>
                         <td class="col-4">{{item.url}}</td>
-                        <td>{{item.active}}</td>
+                        <!-- <td>{{item.active}}</td> -->
                         <div class="">
-                            <button class="boton_activar">Activar</button>
+                            <!-- <button class="boton_activar">Activar</button> -->
                             <button @click="activarEdicion(item._id)" class="boton_editar">Editar</button>
-                            <button @click="eliminarNoticia(item._id)" class="boton_ver">Eliminar</button>                       
+                            <button @click="eliminarNoticia(item._id)" class="boton_eliminar">Eliminar</button>                       
                         </div>
                     </tr>
                 </tbody>
